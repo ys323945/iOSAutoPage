@@ -10,8 +10,8 @@ PayLoadPath = '/Users/Qinz/Desktop/Payload'
 packBagPath = '/Users/Qinz/Desktop/ProgramBag'
 
 #上传蒲公英
-USER_KEY = "61ded40a68afef20ab4b2e9fd278acd2"
-API_KEY = "a4fe2724dc6d8c7eb9f0f1994eec219e"
+USER_KEY = "61ded40a6xxxxxxxxxx2e9fd278acd2"
+API_KEY = "a4fe2724dc6xxxxxxxxxf1994eec219e"
 
 #上传蒲公英
 def uploadIPA(IPAPath):

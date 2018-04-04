@@ -8,8 +8,8 @@ import webbrowser
 import time
 
 #上传蒲公英
-USER_KEY = "61ded40a68afef20ab4b2e9fd278acd2"
-API_KEY = "a4fe2724dc6d8c7eb9f0f1994eec219e"
+USER_KEY = "61ded40a68afxxxxxxxfd278acd2"
+API_KEY = "a4fe2724dc6d8xxxxxxxx1994eec219e"
 
 def searchIpaPath():
     IpaPath=""
