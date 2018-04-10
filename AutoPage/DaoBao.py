@@ -9,6 +9,9 @@ appFileFullPath = '/Users/Qinz/Library/Developer/Xcode/DerivedData/DDDS-bcghxucd
 PayLoadPath = '/Users/Qinz/Desktop/Payload'
 packBagPath = '/Users/Qinz/Desktop/ProgramBag'
 
+#将此处打开的链接改为蒲公英对应app的链接
+openUrl = 'https://www.pgyer.com/manager/dashboard/app/40c633aa8dc0ba15191632860558825e'
+
 #上传蒲公英
 USER_KEY = "61ded40a6xxxxxxxxxx2e9fd278acd2"
 API_KEY = "a4fe2724dc6xxxxxxxxxf1994eec219e"
@@ -32,7 +35,7 @@ def uploadIPA(IPAPath):
         r=requests.post(url,data=data,files=files)
 
 def openDownloadUrl():
-    webbrowser.open(r'https://www.pgyer.com/manager/dashboard/app/40c633aa8dc0ba15191632860558825e',new=1,autoraise=True)
+    webbrowser.open(openUrl,new=1,autoraise=True)
     print "\n*************** 更新成功 *********************\n"
 
 #编译打包流程
