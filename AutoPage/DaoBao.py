@@ -40,6 +40,9 @@ def openDownloadUrl():
 
 #编译打包流程
 def bulidIPA():
+    #打包之前先删除packBagPath下的文件夹
+    commands.getoutput('rm -rf %s'%packBagPath)
+    #创建PayLoad文件夹
     mkdir(PayLoadPath)
     #将app拷贝到PayLoadPath路径下
     commands.getoutput('cp -r %s %s'%(appFileFullPath,PayLoadPath))
