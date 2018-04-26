@@ -79,8 +79,8 @@ def mkdir(PayLoadPath):
 if __name__ == '__main__':
     des = input("请输入更新的日志描述:")
     bulidIPA()
-    #uploadIPA('%s/Payload.ipa'%packBagPath)
-    #openDownloadUrl()
+    uploadIPA('%s/Payload.ipa'%packBagPath)
+    openDownloadUrl()
 
 
     
