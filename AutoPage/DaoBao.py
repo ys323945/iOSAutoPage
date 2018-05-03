@@ -5,6 +5,14 @@ import commands
 import requests
 import webbrowser
 
+'''
+使用注意事项:该脚本基于python2.7
+1、将工程的编译设备选成 Gemeric iOS Device
+2、command + B编译
+3、执行脚本文件
+
+'''
+
 appFileFullPath = '/Users/Qinz/Library/Developer/Xcode/DerivedData/DDDS-bcghxucdqelptddawpsfmvjtoefm/Build/Products/Debug-iphoneos/DDDS.app'
 PayLoadPath = '/Users/Qinz/Desktop/Payload'
 packBagPath = '/Users/Qinz/Desktop/ProgramBag'

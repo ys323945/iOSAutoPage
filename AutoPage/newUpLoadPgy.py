@@ -39,6 +39,7 @@ def uploadIPA(IPAPath):
 
 
 def openDownloadUrl():
+    #此处的地址需要换成蒲公英上自己对应的应用地址
     webbrowser.open(r'https://www.pgyer.com/manager/dashboard/app/40c633aa8dc0ba15191632860558825e',new=1,autoraise=True)
     print "\n*************** 更新成功 *********************\n"
 
@@ -57,6 +58,8 @@ def buildIpa():
 
 
 if __name__ == '__main__':
+    #输入日志格式为 "修改bug" 记得加上双引号，如果有多行可以这么写:
+    # "1 修改首页bug  \n  2 修改点击按钮闪退问题 "
     des = input("请输入更新的日志描述:")
     buildIpa()
     IpaPath=searchIpaPath()
