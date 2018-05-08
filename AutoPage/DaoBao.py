@@ -46,6 +46,19 @@ def openDownloadUrl():
     webbrowser.open(openUrl,new=1,autoraise=True)
     print "\n*************** 更新成功 *********************\n"
 
+
+#创建PayLoad文件夹
+def mkdir(PayLoadPath):
+    isExists = os.path.exists(PayLoadPath)
+    if not isExists:
+        os.makedirs(PayLoadPath)
+        print PayLoadPath + '创建成功'
+        return True
+    else:
+        print PayLoadPath + '目录已经存在'
+        return False
+
+
 #编译打包流程
 def bulidIPA():
     #打包之前先删除packBagPath下的文件夹
@@ -71,16 +84,6 @@ def bulidIPA():
     commands.getoutput('rm -rf ./Payload')
 
 
-#创建PayLoad文件夹
-def mkdir(PayLoadPath):
-    isExists = os.path.exists(PayLoadPath)
-    if not isExists:
-        os.makedirs(PayLoadPath)
-        print PayLoadPath + '创建成功'
-        return True
-    else:
-        print PayLoadPath + '目录已经存在'
-        return False
 
 
 if __name__ == '__main__':
